@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Bind(R.id.lv_samples)
     ListView mLvSamples;
-    private String[] mValues = {"基本应用","create操作符","transforming 操作符"};
+    private String[] mValues = {"基本应用","create操作符","transforming 操作符","Filtering"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +53,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case 2:
                 clz = TransformingOperationActivity.class;
+                break;
+            case 3:
+                clz = FilteringActivity.class;
                 break;
         }
         if(clz != null){
