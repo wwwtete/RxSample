@@ -12,6 +12,11 @@ import com.wangw.rxsample.filtering.Last;
 import com.wangw.rxsample.filtering.OfType;
 import com.wangw.rxsample.filtering.Sample;
 import com.wangw.rxsample.filtering.Single;
+import com.wangw.rxsample.filtering.Skip;
+import com.wangw.rxsample.filtering.SkipLast;
+import com.wangw.rxsample.filtering.Take;
+import com.wangw.rxsample.filtering.TakeLastBuffer;
+import com.wangw.rxsample.filtering.Takelast;
 import com.wangw.rxsample.filtering.ThrottleFirst;
 
 /**
@@ -34,6 +39,11 @@ public class FilteringActivity extends BaseActivity {
         add(Last.class);
         add(Sample.class);
         add(ThrottleFirst.class);
+        add(Skip.class);
+        add(SkipLast.class);
+        add(Take.class);
+        add(Takelast.class);
+        add(TakeLastBuffer.class);
 
         add(IgnoreElements.class);
     }

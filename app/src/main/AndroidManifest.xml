@@ -27,7 +27,7 @@
         <activity android:name=".CreateOperationActivity"></activity>
         <activity android:name=".TransformingOperationActivity"></activity>
         <activity android:name=".FilteringActivity"></activity>
-
+        <activity android:name=".CombiningActivity"></activity>
     </application>
 
 </manifest>
