@@ -24,6 +24,7 @@
             android:name=".sample1.SampleActivity1"
             android:label="@string/title_activity_sample1"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SubjectActivity"></activity>
         <activity android:name=".CreateOperationActivity"></activity>
         <activity android:name=".TransformingOperationActivity"></activity>
         <activity android:name=".FilteringActivity"></activity>
