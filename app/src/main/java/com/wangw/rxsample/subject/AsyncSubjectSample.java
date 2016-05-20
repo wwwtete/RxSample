@@ -7,7 +7,7 @@ import rx.Observer;
 import rx.subjects.AsyncSubject;
 
 /**
- * AsyncSubject:当源Observable完成时AsyncSubject只会发布最后一条数据给已经订阅的每一个观察者
+ * AsyncSubject:当源Observable完成时AsyncSubject只会发布最后一条数据给已经订阅的观察者
  *
  * Created by wangw on 2016/4/7.
  */

@@ -1,6 +1,7 @@
 package com.wangw.rxsample.transforming;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.View;
 
 import com.exlogcat.L;
@@ -21,8 +22,8 @@ import rx.functions.Func1;
 public class FlatMap extends Operation {
     @Override
     public void onOperation(Output view) {
-        onSample01(view);
-//        onSample02(view);
+//        onSample01(view);
+        onSample02(view);
 //        onSample03(view);
     }
 
@@ -71,9 +72,10 @@ public class FlatMap extends Operation {
                 .flatMapIterable(new Func1<Integer, Iterable<String>>() {
                     @Override
                     public Iterable<String> call(Integer integer) {
+                        L.d("call = "+integer);
                         ArrayList<String> arr = new ArrayList<String>();
                         for (int i = 0; i < integer; i++) {
-                            arr.add("flatmapIterable " + integer);
+                            arr.add("flatmapIterable " + i);
                         }
                         return arr;
                     }

@@ -18,6 +18,7 @@ import com.wangw.rxsample.filtering.Take;
 import com.wangw.rxsample.filtering.TakeLastBuffer;
 import com.wangw.rxsample.filtering.Takelast;
 import com.wangw.rxsample.filtering.ThrottleFirst;
+import com.wangw.rxsample.filtering.TimeOut;
 
 /**
  *
@@ -46,5 +47,6 @@ public class FilteringActivity extends BaseActivity {
         add(TakeLastBuffer.class);
 
         add(IgnoreElements.class);
+        add(TimeOut.class);
     }
 }
